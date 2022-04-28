@@ -64,7 +64,7 @@ class ContactDetails {
      */
     set addressName(address) {
         let regex = RegExp('^([0-9A-Za-z\\s,-\\\\.]{4,})$');
-        if ( regex.test( address )) {
+        if (regex.test(address)) {
             this.address = address;
         }
         else {
@@ -80,7 +80,7 @@ class ContactDetails {
      */
     set cityName(city) {
         let regex = RegExp('^([A-Za-z\\s]{4,})$');
-        if ( regex.test( city )) {
+        if (regex.test(city)) {
             this.city = city;
         }
         else {
@@ -96,7 +96,7 @@ class ContactDetails {
      */
     set stateName(state) {
         let regex = RegExp('^([A-Za-z\\s]{4,})$');
-        if ( regex.test( state )) {
+        if (regex.test(state)) {
             this.state = state;
         }
         else {
@@ -112,7 +112,7 @@ class ContactDetails {
      */
     set zipNumber(zip) {
         let regex = RegExp('^([0-9]{6})|([0-9]{3}(\\s)[0-9]{3})$');
-        if ( regex.test( zip )) {
+        if (regex.test(zip)) {
             this.zip = zip;
         }
         else {
@@ -129,7 +129,7 @@ class ContactDetails {
      */
     set phoneNo(phoneNumber) {
         let regex = RegExp("(0|91)?[7-9][0-9]{9}");
-        if ( regex.test( phoneNumber )) {
+        if (regex.test(phoneNumber)) {
             this.phoneNumber = phoneNumber;
         }
         else {
@@ -145,7 +145,7 @@ class ContactDetails {
      */
     set emailID(email) {
         let regex = RegExp('^[A-Za-z0-9!#$%&*+\\\\=?`{|}~^-]+(?:\\.[A-Za-z!#$%&*+\\\\=?`{|}~^-]+)*@(?:([0-9-]{1}|[a-zA-Z]{3,5})\\.)+[a-zA-Z]{2,3}$');
-        if ( regex.test( email )) {
+        if (regex.test(email)) {
             this.email = email;
         }
         else {
